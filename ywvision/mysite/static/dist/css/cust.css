@@ -1,0 +1,43 @@
+.halfInput {
+	padding: 15px;
+	width: 47%;
+	float: right;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+
+
+label[for=id_first_name] {
+	display	: none;	
+}
+
+label[for=id_password] {
+	margin-top : 15px;
+}
+
+#id_first_name{
+	margin-top : -15px;
+	float: left;
+}
+
+#id_date_of_birth_month{
+	width:30%;
+	float: left;
+	margin-right:5px;
+	margin-bottom:15px;
+}
+
+#id_date_of_birth_day{
+	width:30%;
+	float: left;
+	margin-right:5px;
+	margin-bottom:15px;
+}
+
+#id_date_of_birth_year{
+	width:37%;
+	float: right;
+	margin-bottom:15px;
+}

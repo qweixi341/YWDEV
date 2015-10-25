@@ -7,7 +7,8 @@
 {% load staticfiles %}
 
 {% block body_class %}home{% endblock %}
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 {% block body_base %}
 <section id="page-container">
     <!-- HERO -->
@@ -82,18 +83,56 @@
           <a href="#" class="filter-link" data-group="template">Template</a>
         </nav>
 
-       
+        <section id="work-grid" class="site-inner">
 
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/web-one.jpg' %}" /></figure>
+            <h2 class="heading h-02">Positionly gain more traffic</h2>
+            <p class="copy-03">Web Design</p>
+          </div>
 
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/icon-one.jpg' %}" /></figure>
+            <h2 class="heading h-02">Flag - User Dashboard</h2>
+            <p class="copy-03">Icon Design</p>
+          </div>
 
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/web-two.jpg' %}" /></figure>
+            <h2 class="heading h-02">Google Maps - developers</h2>
+            <p class="copy-03">Web Design</p>
+          </div>
 
+          <div class="work-item" data-groups='["all", "landingpage"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/landing-one.jpg' %}" /></figure>
+            <h2 class="heading h-02">Djed Landing Page</h2>
+            <p class="copy-03">Landing Page</p>
+          </div>
 
+          <div class="work-item" data-groups='["all", "template"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/template-one.jpg' %}" /></figure>
+            <h2 class="heading h-02">MG3 Website</h2>
+            <p class="copy-03">Template</p>
+          </div>
 
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="http://dribbble.com">
+            <figure class="image-container"><img src="{% static 'images/home/work/icon-two.jpg' %}" /></figure>
+            <h2 class="heading h-02">Mixpanel Career</h2>
+            <p class="copy-03">Icon Design</p>
+          </div>
 
+          <div class="shuffle__sizer"></div>
+        </section>
 
+        <a href="#" class="button main rounded">See My Work</a>
+      </div>
 
+      <div id="work-detail">
+        <span class="close-icon">x</span>
+        <div class="inner site-inner"></div>
+      </div>
 
-
+    </section>
 
     <!-- PHOTOGRAPHY -->
     <section id="page-photography" class="section">
@@ -102,16 +141,26 @@
 
         <p class="copy-01">In my life there is a place for photos. I love to share experiences and beautiful moments of your life with others. You can see the first examples of the new work, or photos from my vacation or a walk in the park. I thought you would be interested.</p>
 
-
-
-
-
-
-
-
-
-
-
+        <section id="photo-grid">
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-one.jpg' %}" /></figure>
+          </div>
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-two.jpg' %}" /></figure>
+          </div>
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-three.jpg' %}" /></figure>
+          </div>
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-four.jpg' %}" /></figure>
+          </div>
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-five.jpg' %}" /></figure>
+          </div>
+          <div class="photo-item" data-url="http://flickr.com">
+            <figure class="image-container"><img src="{% static 'images/home/photos/photo-six.jpg' %}" /></figure>
+          </div>
+        </section>
 
         <a href="#" class="button main rounded">See My Photoblog</a>
 

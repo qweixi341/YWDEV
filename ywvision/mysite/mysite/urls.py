@@ -10,7 +10,9 @@ urlpatterns = patterns(
     "",
     url(r"^$", TemplateView.as_view(template_name="homepage.html"), name="home"),
     url(r"^admin/", include(admin.site.urls)),
-    url(r"^account/", include("account.urls")),
+    url(r"^account/", include("account.urls")),    
+    url(r'^api/', include('userCust.urls', namespace='api', app_name='userCust')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -41,3 +41,20 @@ label[for=id_password] {
 	float: right;
 	margin-bottom:15px;
 }
+
+.verificationContent{
+	display:block;
+}
+
+#signUpForm{
+	display:none;
+}
+
+#id_mobileVerification_error{
+	display:none;
+	color:#a94442;
+}
+
+.block_verficationCode{
+	display:none;
+}
